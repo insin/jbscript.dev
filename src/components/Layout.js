@@ -1,19 +1,18 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm, scale } from '../utils/typography'
 
 class Layout extends React.Component {
-  render() {
-    const { location, title, children } = this.props
+  renderHeader() {
+    const { location, title } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
-    let header
 
     if (location.pathname === rootPath) {
-      header = (
+      return (
         <h1
           style={{
-            ...scale(1.5),
+            ...scale(1),
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
@@ -31,7 +30,7 @@ class Layout extends React.Component {
         </h1>
       )
     } else {
-      header = (
+      return (
         <h3
           style={{
             fontFamily: `Montserrat, sans-serif`,
@@ -51,22 +50,22 @@ class Layout extends React.Component {
         </h3>
       )
     }
+  }
+
+  render() {
+    const { children } = this.props
+
     return (
       <div
         style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
+          marginLeft: 'auto',
+          marginRight: 'auto',
           maxWidth: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <header>{header}</header>
+        <header>{this.renderHeader()}</header>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
     )
   }
