@@ -25,15 +25,14 @@ pre[class*='language-'] {
   margin: 0.5em 0;
   overflow: auto;
   border-radius: 0.3em;
-}
-
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
   background: #222;
 }
 
+/* Inline code */
 :not(pre) > code[class*='language-'] {
-  padding: 0.1em;
+  background: #f0da4f33;
+  color: inherit;
+  padding: 0.15em 0.2em;
   border-radius: 0.3em;
 }
 
