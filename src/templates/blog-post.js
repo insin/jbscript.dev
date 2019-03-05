@@ -29,12 +29,26 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
+
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        {post.frontmatter.tweet && (
+          <p style={{ marginTop: rhythm(1) }}>
+            <a
+              href={post.frontmatter.tweet}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Comment on Twitter
+            </a>
+          </p>
+        )}
+
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
+
         <Bio />
 
         <ul
@@ -82,8 +96,9 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM D, YYYY")
         description
+        tweet
       }
     }
   }
