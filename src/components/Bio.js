@@ -10,6 +10,7 @@ class Bio extends React.Component {
         style={{
           display: `flex`,
           marginBottom: rhythm(2.5),
+          alignItems: 'center',
         }}
       >
         <img
@@ -23,8 +24,8 @@ class Bio extends React.Component {
             borderRadius: '50%',
           }}
         />
-        <p>
-          Personal blog of{' '}
+        <p style={{ marginBottom: 0 }}>
+          A blog about programming, web dev and whatnot by{' '}
           <a href="https://twitter.com/jbscript">Jonny Buchanan</a>.
         </p>
       </div>
