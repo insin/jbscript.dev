@@ -9,7 +9,6 @@ body {
   --inlineCode-bg: #f0da4f33;
   --inlineCode-text: inherit;
   background-color: var(--bg);
-  transition: color 0.2s ease-out, background 0.2s ease-out;
 }
 
 body.dark {
