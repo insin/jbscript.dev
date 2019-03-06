@@ -2,7 +2,7 @@
 title: 'Tabata Timer v1.2.0'
 date: '2019-03-07'
 description: Adding some colour to the Workout screen
-tweet: ''
+tweet: https://twitter.com/jbscript/status/1103361938640138240
 ---
 
 During a Tabata workout at my Wednesday group fitness class, our trainer's phone was propped up in the corner while she was moving around checking people's form
