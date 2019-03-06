@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 
 import Bio from '../components/Bio'
+import Footer from '../components/Footer'
 import Layout from '../components/Layout'
 import Seo from '../components/Seo'
 import { rhythm, scale } from '../utils/typography'
@@ -29,7 +30,6 @@ class BlogPostTemplate extends React.Component {
         >
           {post.frontmatter.date}
         </p>
-
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         {post.frontmatter.tweet && (
           <p style={{ marginTop: rhythm(1) }}>
@@ -42,15 +42,13 @@ class BlogPostTemplate extends React.Component {
             </a>
           </p>
         )}
-
         <hr
           style={{
             marginBottom: rhythm(1),
+            marginTop: rhythm(1),
           }}
         />
-
         <Bio />
-
         <ul
           style={{
             display: `flex`,
@@ -62,7 +60,11 @@ class BlogPostTemplate extends React.Component {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link
+                to={previous.fields.slug}
+                rel="prev"
+                style={{ marginRight: rhythm(1.5) }}
+              >
                 ← {previous.frontmatter.title}
               </Link>
             )}
@@ -75,6 +77,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        <Footer socialLinks={false} />
       </Layout>
     )
   }

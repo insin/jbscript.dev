@@ -1,5 +1,6 @@
 import React from 'react'
 
+import ThemeToggler from './ThemeToggler'
 import { rhythm } from '../utils/typography'
 
 class Footer extends React.Component {
@@ -7,28 +8,48 @@ class Footer extends React.Component {
     return (
       <footer
         style={{
-          marginTop: rhythm(2.5),
+          marginTop: rhythm(1),
           paddingTop: rhythm(1),
         }}
       >
-        <a
-          href="https://twitter.com/jbscript"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          twitter
-        </a>{' '}
-        &bull;{' '}
-        <a
-          href="https://github.com/insin"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          github
-        </a>
+        {this.props.socialLinks && (
+          <>
+            <a
+              href="https://twitter.com/jbscript"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitter
+            </a>{' '}
+            &bull;{' '}
+            <a
+              href="https://github.com/insin"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </>
+        )}
+        <ThemeToggler>
+          {({ theme, toggleTheme }) => (
+            <label style={{ float: 'right' }}>
+              <input
+                type="checkbox"
+                onClick={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                checked={theme === 'dark'}
+              />{' '}
+              Dark mode
+            </label>
+          )}
+        </ThemeToggler>
       </footer>
     )
   }
+}
+
+Footer.defaultProps = {
+  socialLinks: true,
 }
 
 export default Footer
