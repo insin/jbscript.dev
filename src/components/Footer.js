@@ -36,7 +36,7 @@ class Footer extends React.Component {
             <label style={{ float: 'right' }}>
               <input
                 type="checkbox"
-                onClick={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
                 checked={theme === 'dark'}
               />{' '}
               Dark mode
