@@ -1,6 +1,6 @@
 import React from 'react'
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
-import ThemeToggler from './ThemeToggler'
 import { rhythm } from '../utils/typography'
 
 class Footer extends React.Component {
@@ -13,7 +13,7 @@ class Footer extends React.Component {
         }}
       >
         {this.props.socialLinks && (
-          <>
+          <span>
             <a
               href="https://twitter.com/jbscript"
               target="_blank"
@@ -29,7 +29,7 @@ class Footer extends React.Component {
             >
               GitHub
             </a>
-          </>
+          </span>
         )}
         <ThemeToggler>
           {({ theme, toggleTheme }) => (
