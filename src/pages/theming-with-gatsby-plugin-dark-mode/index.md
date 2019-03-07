@@ -144,7 +144,7 @@ If you want to customise the base HTML for your Gatsby app, an alternative to [c
 
 For example, one of the things `gatsby-plugin-dark-mode` handles is inserting a `<script>` directly inside `<body>` to set the initial theme, which avoids seeing a flash of the default light theme when revisiting the site after enabling dark mode.
 
-This is implemented like so:
+This is implemented by using the [`onRenderBody` API](https://www.gatsbyjs.org/docs/ssr-apis/#onRenderBody)'s `setPreBodyComponents()` function to add a `<script>` element to the list of components which will be rendered inside `<body>`:
 
 ```js
 // gatsby-ssr.js
