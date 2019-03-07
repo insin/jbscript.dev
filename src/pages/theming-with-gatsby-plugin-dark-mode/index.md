@@ -97,7 +97,7 @@ body.dark {
 
 You can then use these variables in your site's components...
 
-```js
+```jsx
 class Layout extends React.Component {
   render() {
     return (
