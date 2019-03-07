@@ -2,6 +2,7 @@
 title: Theming Gatsby with gatsby-plugin-dark-mode
 date: 2019-03-08
 description: A Gatsby plugin which handles some of the details of implementing a dark mode theme.
+tweet: https://twitter.com/jbscript/status/1103705483007778818
 ---
 
 [gatsby-plugin-dark-mode](https://github.com/insin/gatsby-plugin-dark-mode#readme) is a new plugin for [Gatsby](https://www.gatsbyjs.org) which handles some of the details of implementing a dark mode theme.
