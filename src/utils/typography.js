@@ -21,6 +21,9 @@ Wordpress2016.overrideThemeStyles = () => ({
   hr: {
     background: 'var(--hr)',
   },
+  'h1 code, h2 code, h3 code, h4 code, h5 code, h6 code': {
+    fontSize: 'inherit',
+  },
   'li code': {
     fontSize: '1rem',
   },

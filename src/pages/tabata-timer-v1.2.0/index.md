@@ -1,7 +1,7 @@
 ---
-title: 'Tabata Timer v1.2.0'
-date: '2019-03-07'
-description: Adding some colour to the Workout screen
+title: Tabata Timer v1.2.0's colourful workout screen
+date: 2019-03-07
+description: Adding a splash of colour to a Flutter app.
 tweet: https://twitter.com/jbscript/status/1103361938640138240
 ---
 

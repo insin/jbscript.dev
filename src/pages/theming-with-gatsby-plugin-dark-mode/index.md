@@ -1,7 +1,7 @@
 ---
-title: 'Theming with gatsby-plugin-dark-mode'
-date: '2019-03-07'
-description: A Gatsby plugin which handles some of the details of implementing a dark mode theme
+title: Theming Gatsby with gatsby-plugin-dark-mode
+date: 2019-03-08
+description: A Gatsby plugin which handles some of the details of implementing a dark mode theme.
 ---
 
 [gatsby-plugin-dark-mode](https://github.com/insin/gatsby-plugin-dark-mode#readme) is a new plugin for [Gatsby](https://www.gatsbyjs.org) which handles some of the details of implementing a dark mode theme.
@@ -136,6 +136,32 @@ Wordpress2016.overrideThemeStyles = () => ({
     stroke: 'var(--textLink)',
   },
 })
+```
+
+## Bonus Gatsby tip: customising HTML without `html.js`
+
+If you want to customise the base HTML for your Gatsby app, an alternative to [creating and tweaking your own copy of `html.js`](https://www.gatsbyjs.org/docs/custom-html/) is to use the [Server Side Rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) by creating a `gatsby-ssr.js` module.
+
+For example, one of the things `gatsby-plugin-dark-mode` handles is inserting a `<script>` directly inside `<body>` to set the initial theme, which avoids seeing a flash of the default light theme when revisiting the site after enabling dark mode.
+
+This is implemented like so:
+
+```js
+// gatsby-ssr.js
+
+const React = require('react')
+
+exports.onRenderBody = function({ setPreBodyComponents }) {
+  setPreBodyComponents([
+    React.createElement('script', {
+      dangerouslySetInnerHTML: {
+        __html: `
+// <script> contents
+      `,
+      },
+    }),
+  ])
+}
 ```
 
 ## Acknowledgements
