@@ -29,6 +29,14 @@ class Footer extends React.Component {
               rel="noopener noreferrer"
             >
               GitHub
+            </a>{' '}
+            &bull;{' '}
+            <a
+              href="https://twitch.tv/jbscript"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Twitch
             </a>
           </span>
         )}
