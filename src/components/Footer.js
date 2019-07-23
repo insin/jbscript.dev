@@ -37,6 +37,14 @@ class Footer extends React.Component {
               rel="noopener noreferrer"
             >
               Twitch
+            </a>{' '}
+            &bull;{' '}
+            <a
+              href="https://play.google.com/store/apps/developer?id=Jonny+Buchanan"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Play
             </a>
           </span>
         )}
