@@ -2,6 +2,7 @@
 title: Why I had to make Tweak New Twitter
 date: 2019-08-02
 description: Why I had to made an extension which <em>reduces</em> "engagement" on Twitter
+tweet: https://twitter.com/jbscript/status/1157121789517946880
 ---
 
 ## The problem: "engagement" came back
