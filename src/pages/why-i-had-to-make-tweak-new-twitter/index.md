@@ -25,7 +25,7 @@ In addition, some of the layout changes were directing my attention to the wrong
 
 ![A screenshot of New Twitter with content highlighted in green and distracting parts of the UI highlighted in red](distraction.png)
 
-Combined, these made New Twitter feel unusable from both a UX and mental health perspective - like the "hellsite" people refer to it as.
+Combined, these made New Twitter feel unusable from both a UX and mental hygiene perspective - like the "hellsite" people refer to it as.
 
 ## A solution: [Tweak New Twitter](https://github.com/insin/tweak-new-twitter#tweak-new-twitter)
 
