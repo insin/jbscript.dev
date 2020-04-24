@@ -7,7 +7,7 @@ module.exports = {
     social: {
       twitter: '@jbscript',
     },
-    image: '/images/icon.png'
+    image: '/images/icon.png',
   },
   pathPrefix: '/',
   plugins: [

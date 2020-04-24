@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 
 import { rhythm } from '../utils/typography'
 
@@ -62,7 +62,7 @@ class Footer extends React.Component {
               <label style={{ float: 'right' }}>
                 <input
                   type="checkbox"
-                  onChange={e =>
+                  onChange={(e) =>
                     toggleTheme(e.target.checked ? 'dark' : 'light')
                   }
                   checked={theme === 'dark'}

@@ -20,7 +20,7 @@ Wordpress2016.overrideThemeStyles = () => ({
   },
   blockquote: {
     color: 'var(--textNormal)',
-    borderLeftColor: 'var(--textLink)'
+    borderLeftColor: 'var(--textLink)',
   },
   hr: {
     background: 'var(--hr)',
