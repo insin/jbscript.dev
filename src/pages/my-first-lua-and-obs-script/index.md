@@ -2,6 +2,7 @@
 title: My First Lua (and OBS) Script
 date: 2020-04-24
 description: Writing a script for Open Broadcaster Software to bounce scene items around.
+tweet: https://twitter.com/jbscript/status/1253661781546815489
 ---
 
 I wrote some [Lua](https://www.lua.org/) for the first time last night to bounce scene items around in [Open Broadcaster Software](https://obsproject.com/) (OBS), in the style of the [bouncing DVD logo](https://www.bouncingdvdlogo.com/).
