@@ -3,9 +3,12 @@ title: My First Lua (and OBS) Script
 date: 2020-04-24
 description: Writing a script for Open Broadcaster Software to bounce scene items around.
 tweet: https://twitter.com/jbscript/status/1253661781546815489
+image: image.png
 ---
 
 I wrote some [Lua](https://www.lua.org/) for the first time last night to bounce scene items around in [Open Broadcaster Software](https://obsproject.com/) (OBS), in the style of the [bouncing DVD logo](https://www.bouncingdvdlogo.com/).
+
+![The Lua and OBS logos merged into eachother](image.png)
 
 I've always wanted to play about with Lua, as my younger kids are [Roblox](https://www.roblox.com/) mad and it's the language used to script games in [Roblox Studio](https://www.roblox.com/create), so that's potentially a way to get them into coding in the future…
 
