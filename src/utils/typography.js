@@ -18,6 +18,10 @@ Wordpress2016.overrideThemeStyles = () => ({
   'a.anchor svg[aria-hidden="true"]': {
     stroke: 'var(--textLink)',
   },
+  blockquote: {
+    color: 'var(--textNormal)',
+    borderLeftColor: 'var(--textLink)'
+  },
   hr: {
     background: 'var(--hr)',
   },

@@ -17,7 +17,7 @@ It provides:
 
 First, install the plugin and configure Gatsby to use it:
 
-```sh
+```shell
 npm install gatsby-plugin-dark-mode --save
 ```
 
