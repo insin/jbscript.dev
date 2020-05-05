@@ -16,7 +16,7 @@ I've always wanted to play about with Lua, as my younger kids are [Roblox](https
 
 Here's a demo of the finished script bouncing a background logo around in an OBS scene (sound ON):
 
-`youtube:https://www.youtube.com/watch?v=FbtzencagAM`
+`youtube: [A background logo bouncing around a scene in OBS](https://www.youtube.com/watch?v=FbtzencagAM)`
 
 ## Anatomy of an OBS scene
 
