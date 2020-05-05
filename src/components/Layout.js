@@ -63,9 +63,10 @@ class Layout extends React.Component {
         {heading}
         <ThemeToggler>
           {({ theme, toggleTheme }) => {
-            let isDarkMode =
-              (typeof window !== 'undefined' ? window['__theme'] : theme) ===
-              'dark'
+            if (theme == null) {
+              return null
+            }
+            let isDarkMode = theme === 'dark'
             return (
               <React.Fragment>
                 <Helmet
