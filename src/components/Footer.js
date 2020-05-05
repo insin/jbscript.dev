@@ -1,6 +1,4 @@
 import React from 'react'
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
-import { Helmet } from 'react-helmet'
 
 import { rhythm } from '../utils/typography'
 
@@ -48,30 +46,6 @@ class Footer extends React.Component {
             </a>
           </span>
         )}
-        <ThemeToggler>
-          {({ theme, toggleTheme }) => (
-            <React.Fragment>
-              <Helmet
-                meta={[
-                  {
-                    name: 'theme-color',
-                    content: theme === 'dark' ? '#282828' : '#f0da4f',
-                  },
-                ]}
-              />
-              <label style={{ float: 'right' }}>
-                <input
-                  type="checkbox"
-                  onChange={(e) =>
-                    toggleTheme(e.target.checked ? 'dark' : 'light')
-                  }
-                  checked={theme === 'dark'}
-                />{' '}
-                Dark mode
-              </label>
-            </React.Fragment>
-          )}
-        </ThemeToggler>
       </footer>
     )
   }
