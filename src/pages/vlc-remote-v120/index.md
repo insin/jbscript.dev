@@ -5,7 +5,9 @@ description: Fixes and new features in v1.2.0 of VLC Remote, my open source and 
 image: image.png
 ---
 
-*Google Play store only gives you 500 characters to tell people what's new, so here's a more complete rundown for v1.2.0 of [VLC Remote](https://play.google.com/store/apps/details?id=jbscript.vlcremote), my [open source](https://github.com/insin/vlc_remote) and ad-free Android remote control app for [VLC media player](https://www.videolan.org/vlc):*
+*The Google Play Store only gives you 500 characters to tell people what's new, so here's a more complete rundown for v1.2.0 of [VLC Remote](https://play.google.com/store/apps/details?id=jbscript.vlcremote), my [open source](https://github.com/insin/vlc_remote) and ad-free Android remote control app for [VLC media player](https://www.videolan.org/vlc):*
+
+![VLC Remote logo](image.png)
 
 ## 🦋 Upgraded to Flutter v1.17
 
