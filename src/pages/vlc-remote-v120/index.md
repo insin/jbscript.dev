@@ -2,6 +2,7 @@
 title: VLC Remote v1.2.0 release notes
 date: 2020-05-08
 description: Fixes and new features in v1.2.0 of the VLC Remote app for Android
+image: image.png
 ---
 
 _Google Play store only gives you 500 characters to tell people what's new, so here's a more complete rundown for [VLC Remote](https://play.google.com/store/apps/details?id=jbscript.vlcremote) v1.2.0:_
