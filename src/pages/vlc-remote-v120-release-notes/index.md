@@ -3,6 +3,7 @@ title: VLC Remote v1.2.0 release notes
 date: 2020-05-08
 description: Fixes and new features in v1.2.0 of VLC Remote, my open source and ad-free Android remote control app for VLC media player
 image: image.png
+tweet: https://twitter.com/jbscript/status/1258484283242459137
 ---
 
 *The Google Play Store only gives you 500 characters to tell people what's new, so here's a more complete rundown for v1.2.0 of [VLC Remote](https://play.google.com/store/apps/details?id=jbscript.vlcremote), my [open source](https://github.com/insin/vlc_remote) and ad-free Android remote control app for [VLC media player](https://www.videolan.org/vlc):*
